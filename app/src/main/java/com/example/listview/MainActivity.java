@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         ListView listview = this.findViewById(R.id.listView);
 
         //add text to listview
-        String[] items = {"Item 1", "Item 2", "Item 3", "Item 4'"};
-        Activity[] activities = {new CheckBoxes(), };
+        String[] items = {"RadioGroups", "BoxModel", "Overlap", "InternetURL"};
+        Activity[] activities = {new CheckBoxes(), new BoxModel(), new Overlap(), new InternetURL()};
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
         listview.setAdapter(adapter);
